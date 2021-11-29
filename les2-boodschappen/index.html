@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Les 2 - Boodschappen</title>
 </head>
     <body>
         <h1>Boodschappen sorteren</h1>
         <div id="boodschappen">
-            <button>Appel</button>
-            <button>Sla</button>
-            <button>Banaan</button>
-            <button>Kiwi</button>
-            <button>Broccoli</button>
-            <button>Spruitjes</button>
+            <button onclick="zetInFruitLa('Appel')">Appel</button>
+            <button onclick="zetInGroenteLa('Sla')">Sla</button>
+            <button onclick="zetInFruitLa('Banaan')">Banaan</button>
+            <button onclick="zetInFruitLa('Kiwi')">Kiwi</button>
+            <button onclick="zetInGroenteLa('Broccoli')">Broccoli</button>
+            <button onclick="zetInGroenteLa('Spruitjes')">Spruitjes</button>
         </div>
         <div id="koelkast">
             <section id="groente">
@@ -26,5 +25,6 @@
                 <h2>Fruit</h2>
             </section>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
