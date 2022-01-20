@@ -2,14 +2,32 @@ const myTitle = document.getElementById("myTitle");
 const myImage = document.getElementById("myImage");
 const myInput = document.getElementById("myInput");
 
+let directionButtons = {
+    "noord": document.getElementById('knopNoord'),
+    "oost": document.getElementById('knopOost'),
+    "zuid": document.getElementById('knopZuid'),
+    "west": document.getElementById('knopWest')
+}
+
+let current_index = 0;
+
 let lokaties = [
     {
-        "titel":"plaats 0",
-        "image":"img/0.jpg"
+        "titel":"Ingang Silver Bullet",
+        "image":"img/0.jpg",
+        "directions": {
+            "zuid":1
+        }
     },
     {
-        "titel":"plaats 1",
-        "image":"img/1.jpg"
+        "titel":"Gang bij docentenkamer",
+        "image":"img/1.jpg",
+        "directions": {
+            "noord":0,
+            "west":2,
+            "oost":5,
+            "zuid":4
+        }
     },
     {
         "titel":"plaats 2",
